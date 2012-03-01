@@ -1,13 +1,20 @@
-jcRemoteID is a datatype extension allowing user to manage Object RemoteID and Nodes RemoteID directly from edit mode
+jcRemoteID is an extension allowing user to manage Object RemoteID
+and Nodes RemoteID directly from edit mode with a datatype or with
+a custom module/view (jcremoteid/update/<NodeID>) available from
+context menu (main one, on full view)
 
 
-This extension has been created to avoid the use of nodeID or objectID within configuration (any ini) and also override.ini (not documented but override are working on remote id condition).
+This extension has been created to avoid the use of nodeID or
+objectID within configuration (any ini) and also override.ini
+(not documented but override are working on remote id condition).
 
-The main interest of this is to be able to manage the same remote id between multiple environments (dev, test, production) for nodes or objects (when object id or node id are auto increment).
+The main interest of this is to be able to manage the same remote
+id between multiple environments (dev, test, production) for nodes
+or objects (when object id or node id are auto increment).
 
 -- Using Remote ID in fetch --
 
-{def $object=fetch('content','object',hash('remote_id','MYOBJECT'))}&nbsp;
+{def $object=fetch('content','object',hash('remote_id','MYOBJECT'))}
 {def $node=fetch('content','node',hash('remote_id','MYNODE'))}
 
 
