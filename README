@@ -1,6 +1,6 @@
 jcRemoteID is an extension allowing user to manage Object RemoteID
 and Nodes RemoteID directly from edit mode with a datatype or with
-a custom module/view (jcremoteid/update/<NodeID>) available from
+a custom module/view (remoteid/update/<NodeID>) available from
 context menu (main one, on full view)
 
 
