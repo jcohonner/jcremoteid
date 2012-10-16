@@ -235,6 +235,25 @@ class jcRemoteIDType extends eZDataType
 
     }
 
+
+    /**
+     * This function is called when a new version is created or an object is copied
+     * @param eZContentObjectAttribute $objectAttribute
+     * @param integer $currentVersion
+     * @param eZContentObjectAttribute $originalContentObjectAttribute
+     */
+    function initializeObjectAttribute( $objectAttribute, $currentVersion, $originalContentObjectAttribute )
+    {
+
+        if ($objectAttribute->attribute('contentobject_id')!=$originalContentObjectAttribute->attribute('contentobject_id'));
+        {
+            //this is a copy of an original object
+            //we should remove datas from data_text
+            $objectAttribute->setAttribute('data_text', '');
+        }
+    }
+
+
 }
 
 eZDataType::register( jcRemoteIDType::DATA_TYPE_STRING, "jcRemoteIDType" );
