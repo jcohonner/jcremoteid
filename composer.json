@@ -1,0 +1,19 @@
+{
+    "name": "okamosy/jcremoteid",
+    "description": "jcRemoteID is an extension allowing user to manage Object RemoteID and Nodes RemoteID directly from edit mode",
+    "type": "ezpublish-legacy-extension",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "jcohonner",
+            "homepage": "https://github.com/jcohonner"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ezsystems/ezpublish-legacy-installer": "*"
+    },
+    "extra": {
+        "ezpublish-legacy-extension-name": "jcRemoteID"
+    }
+}
