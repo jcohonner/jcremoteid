@@ -1,5 +1,5 @@
 {
-    "name": "jcohonner/jcremoteid",
+    "name": "okamosy/jcremoteid",
     "description": "jcRemoteID is an extension allowing user to manage Object RemoteID and Nodes RemoteID directly from edit mode",
     "type": "ezpublish-legacy-extension",
     "license": "GPL-2.0",
